@@ -2,8 +2,12 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Hello! Wow!</title>
+    <title>Game 4</title>
     <script src="js/phaser.js"></script>
+    <script src="js/character.js"></script>
+    <script src="js/preloader.js"></script>
+    <script src="js/world.js"></script>
+    <script src="js/battle.js"></script>
     <script src="js/main.js"></script>
 
 <style>
@@ -22,59 +26,64 @@ body
 <body>
 <div id="game"></div>
 <div id="readme">
-<h2>Your game title</h2>
+<h2>Game 4</h2>
 <ul>
 
 <li><strong>High Concept:</strong>
-A one-sentence summary of your game.
+Fight through the world and eliminate all of the competition for the job.
 </li>
 
 <li><strong>Player Experience Goals:</strong>
-What experience do you want players to have when playing your game?
+Players should have to think about how to approach the battles to keep their health up between battles.
 </li>
 
 <li><strong>Genre:</strong>
-A single sentence that places the game within a game genre or a hybrid of genres.
+RPG
 </li>
 
 <li><strong>Game play:</strong>
-A paragraph describing the actions the player can perform, the system dynamics, and the core mechanic. Include a concise explanation of the prototype’s inputs and their expected effects (how to play). You can also describe game play that is not in the prototype. You may include mock-up images for parts of the game not in the prototype.
+This game features two separate states:<p>
+World Map:<p>
+Move around with the arrow keys and run into enemies to fight them.<p>
+Battle:<p>
+Click the attack or defend button to take your turn.  Defending significantly reduces the amount of damage the enemy deals to you, especially if the enemy crits.
+The first player to hit 0 health loses.  Health is not restored between battles unless the player levels up at the end of the battle.  Winning battles grants experience, 
+which will eventually cause you to level up.  Leveling up increases all of your stats and fully heals you.  Defeat all 5 enemies to win the game.
 </li>
 
 <li><strong>Prototype goal:</strong>
-What game mechanic is this prototype evaluating?
+This prototype is evaluating the effectiveness of switching between two styles of gameplay.
 </li>
 
 <li><strong>Features:</strong>
-What are the unique aspects of your game that set it apart?
-</li>
-
-<li><strong>Setting/Premise:</strong>
-A paragraph about the world your game is set in and who the characters are. What makes the game world and its occupants unique and interesting? Do the tokens represent something? If the game has a backstory, put it here. If the game is abstract, then say so.
+This game features both exploration and a turn based combat system.
 </li>
 
 <li><strong>Story:</strong>
-If the game has a story, summarize it in a paragraph. How will the dramatic tension interact with the gameplay tension?
+You had an interview that you thought went well, but after hearing a rumor that someone else was likely to get the job, you decide to...  increase your odds.
 </li>
 
 <li><strong>Target Audience:</strong>
-A single sentence that describes the demographic you're trying to reach.
+RPG fans.
 </li>
 
 <li><strong>Play time:</strong>
-How long does your game take to play?
+3 minutes.
 </li>
 
 <li><strong>Strategies:</strong>
-What player strategies do you expect will be effective at playing this game?
+I expect that attempting to time the use of defend to reduce the damage of the enemy's critical strikes will be the most effective strategy.
 </li>
 
 <li><strong>Prototype Assets:</strong>
-Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+Resources taken from: <p>
+http://downloads.rpg-palace.com/details.php?id=250
+http://untamed.wild-refuge.net/rmxpresources.php?characters
+http://opengameart.org/content/ui-pack-buttons-and-dialogue
 </li>
 
 <li><strong>Prototype Closest Other Game:</strong>
-Which other game most closely resembles your game? If you are borrowing from a Phaser Example, you must say so here.
+This game borrows elements from the game at http://www.gamedevacademy.org/html5-phaser-tutorial-top-down-games-with-tiled/
 </li>
 
 </ul>
